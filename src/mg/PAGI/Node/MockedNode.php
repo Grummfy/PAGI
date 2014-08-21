@@ -67,13 +67,13 @@ class MockedNode extends Node
 
     /**
      * Optional callback to be used before executing the onInputValid callback.
-     * @var Closure|null
+     * @var \Closure|null
      */
     private $validInputCallback = null;
 
     /**
      * Optional callback to be used before executing the onInputFailed callback.
-     * @var Closure|null
+     * @var \Closure|null
      */
     private $failedInputCallback = null;
 

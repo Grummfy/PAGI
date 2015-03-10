@@ -157,7 +157,7 @@ class Result implements IResult
 
         $this->_result = explode('=', $response[1]);
         if (isset($this->_result[1])) {
-            $this->_result = $this->_result[1];
+            $this->_result = is_array($this->_result[1]) ? var_export($this->_result[1], true) : $this->_result[1];
         }
 
         if (isset($response[2])) {
